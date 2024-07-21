@@ -1,0 +1,141 @@
+
+
+/******************************************************************************
+                        BCA   4th  Semester
+                         Scripting Language
+                          First Assegnment
+                              2/11/2022
+                                                          Sandip chapagain;
+                                                          Roll:28;
+
+*******************************************************************************/
+
+<!--1. Get user input using prompt("Enter your age") if user is 18 or older
+give feedback:'you are old enough to drive' but if not 18 give another
+feedback stating to wait for the number of years he need to turn 18 -->
+
+<!-- <!doctype html>
+<html>
+<head>
+    <title> JavaScript Playground </title>
+    <script type="text/javascript">
+        function age(){
+  var Age = prompt("Please enter your Age: "); 
+ 
+  if (Age >= 18) {
+    alert("You are old enough to drive");
+  } else {
+      var a=18-Age;
+     alert("You are left with "+a+" to drive.");
+  }
+}
+age();
+    </script>   
+</head>
+    <body>
+        <script> -->
+  <!-- ------------------------------------- -->
+ 
+ 
+  <!--        
+2.compare the values of myAge and your age using if..else. based
+on the comparison and log the result to console starting who is older(me or you).
+use prompt("Enter your age ") to get the age as input -->
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        const MyAge=22;
+        function comp(){
+    var YourAge=prompt("Enter your age:");
+    if(MyAge>=YourAge){
+        var a=MyAge-YourAge;
+        alert("You are "+a+"junior then me");
+    }
+    else{
+        var b=YourAge-MyAge;
+        alert("You are"+b+"older then me")
+    }
+        }
+        comp();
+    </script>
+</head>
+<body>
+    
+</body>
+</html> -->
+
+
+
+
+<!-- 
+3. write program which tells the number of days in a month -->
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+function month(){
+
+    var a=prompt("Enter The month:");
+ 
+var b = a.toUpperCase();
+switch(b){
+    case "JANUARY":
+    alert(a+" has 31 days");
+    break;
+    case "FEBRUARY":
+    alert(a+" has 28 days");
+    break;
+    case "MARCH":
+    alert(a+" has 31 days");
+    break;
+    case "APRIL":
+    alert(a+" has 30 days");
+    break;
+    case "MAY":
+    alert(a+" has 31 days");
+    break;
+    case "JUNE":
+    alert(a+" has 30 days");
+    break;
+    case "JULY":
+    alert(a+" has 31 days");
+    break;
+    case "AUGUST":
+    alert(a+" has 31 days");
+    break;
+    case "SEPTEMBER":
+    alert(a+" has 30 days");
+    break;
+    case "OCTOBER":
+    alert(a+" has 31 days");
+    break;
+    case "NOVEMBER":
+    alert(a+" has 30 days");
+    break;
+    case "DECEMBER":
+    alert(a+" has 31 days");
+    break;
+    default:
+    alert(a+" is not a month");
+}
+}
+month();
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

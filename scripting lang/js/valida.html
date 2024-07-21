@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form ValidationExample</title>
+</head>
+<style>
+    span{
+        color: red;
+    }
+</style>
+<body>
+    <fieldset style="width:50%;">
+        <legend>Personal Form</legend>
+    <form method="post" name="frm" action="">
+        <label>First Name</label>
+        <input type="text" name="txtfname" id="fname">
+        <span id="check"></span>
+        <br><br>
+        <label>Last Name</label>
+        <input type="text" name="txtlname" id="lname"> 
+        <span id="check1"></span>
+        <br><br>
+        <label>Address</label>
+        <input type="text" name="txtaddress" > <br><br>
+        <label>Mobile</label>
+
+        <input type="text" name="txtmobile" > <br><br>
+        <label>Gender</label>
+        
+        <input type="radio" name="gender" > 
+            Male
+            <input type="radio" name="gender" > 
+            Female
+        <br><br> 
+        <select name="ch" id="country">
+            <option selected disabled>Choose any item</option>
+            <option value="Nepal">Nepal</option>
+            <option value="China">China</option>
+        </select>
+        <span id="check3"></span>
+        <input type="button" onclick="getData()" value="Submit">
+    </form>
+</fieldset>
+
+</body>
+<script>
+    function getData(){
+        var fname = document.getElementById("fname").value
+        if(fname==''){
+            document.getElementById("check").textContent = "Please enter First name"
+        //    alert('please enter first name')   
+        }
+        if(document.getElementById("lname").value==''){
+            document.getElementById("check1").textContent = "Please enter Last name"
+        }
+        if(isNaN(document.getElementById("country").value)){
+            // alert('hello')
+            document.getElementById("check3").textContent = "Please choose any country"
+        }
+       
+    }
+</script>
+</html>

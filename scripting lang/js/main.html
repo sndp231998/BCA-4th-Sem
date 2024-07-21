@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculator</title>
+</head>
+
+<body>
+    <form name="formcalc">
+        Num1:<input type="text" name="a">
+        <br>
+        Num2:<input type="text" name="b">
+        <br>
+        Result:<input type="text" name="c">
+        <br>
+        <input type="button" value="Add" onclick="add()">
+        <br>
+        <input type="button" value="sub" onclick="sub()">
+    </form>
+    <script>
+        function add() {
+            var num1, num2, res;
+            num1 = Number(document.formcalc.a.value);
+            num2 = Number(document.formcalc.b.value);
+            res = num1 + num2;
+            document.formcalc.c.value = res;
+        }
+        function sub() {
+            var num1, num2, res;
+            num1 = Number(document.formcalc.a.value);
+            num2 = Number(document.formcalc.b.value);
+            res = num1 - num2;
+            document.formcalc.c.value = res;
+        }
+    </script>
+</body>
+
+</html>

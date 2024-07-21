@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculator</title>
+</head>
+
+<body>
+    <div class="table" name="table">
+
+        <form name="table">
+
+            <h1>Basic Arithmetic Functions</h1>
+
+            <input type="number" name="a" placeholder="operand"><br>
+
+            <input type="number" name="b" placeholder="operand"><br>
+
+
+            <input type="button" value="Add" onclick="add()">
+            <input type="button" value="sub" onclick="sub()">
+            <input type="button" value="mul" onclick="mul()">
+            <br>
+
+            <input type="button" value="Div" onclick="div()">
+            <input type="button" value="mod" onclick="mod()"><br>
+
+
+
+            Result:<br>
+            <input type="number" name="result">
+
+        </form>
+
+
+
+
+
+
+        <script>
+
+
+
+
+            // function add() {
+            //   var num1,num2,res;
+            //     num1 = Number(document.table.a.value);
+            //     num2 =Number(document.table.b.value);
+            //   res = num1 + num2;
+            //  res= document.table.result.value;
+            // }
+        function sub(){
+        var num1,num2,res;
+       
+        num1=document.table.a.value;
+        num2=document.table.b.value;
+        res=num1-num2;
+        document.table.result.value=res;
+        }
+        // function mul(){
+        // var num1,num2,res;
+        // num1=Number(document.table.a.value);
+        // num2=Number(document.table.b.value);
+        // res=num1*num2;
+        // document.table.result.value=res;
+        // }
+        // function div(){
+        // var num1,num2,res;
+        // num1=Number(document.table.a.value);
+        // num2=Number(document.table.b.value);
+        // res=num1/num2;
+        // document.table.result.value=res;
+        // }
+        // function mod(){
+        // var num1,num2,res;
+        // num1=Number(document.table.a.value);
+        // num2=Number(document.table.b.value);
+        // res=num1%num2;
+        // document.table.result.value=res;
+        // }
+    
+
+        </script>
+</body>
+
+</html>

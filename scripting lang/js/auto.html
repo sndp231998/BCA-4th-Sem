@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+    function a(){
+    var qty = document.getElementById("qun").value
+    var rate =document.getElementById("rate").value
+    var R =qty*rate;
+    document.getElementById("amount").value = R
+    }
+</script>
+<body>
+
+<form>
+    <label for="item" >Item</label>
+   <select>
+       <option>choose..</option>
+       <option>baigun</option>
+       <option>ful koppi</option>
+       <option>banda kopi</option>
+   </select>
+   <br><br>
+<label for="qty" >Quentity</label>
+<input type="number" id="qun" placeholder="Enter quentity">
+<br><br>
+<label for="rate" >Rate</label>
+<input type="number" id="rate" placeholder="Enter Rate" onkeyup="a()">
+<br><br>
+<label for="amount" >Amount</label>
+<input type="text" id="amount">
+
+
+</form>
+
+
+</body>
+</html>
